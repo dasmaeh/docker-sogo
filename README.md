@@ -1,23 +1,13 @@
-# SOGo for Docker
+# SOGo v3 (nightly) for Docker
 
 [SOGo](http://www.sogo.nu) is fully supported and trusted groupware server with a focus on scalability and open standards. SOGo is released under the GNU GPL/LGPL v2 and above. 
 
-This Dockerfile packages SOGo as packaged by Inverse, SOGo's creators, together with Apache 2 and memcached.
+This Dockerfile packages SOGo v3 nightlies as packaged by Inverse, SOGo's creators, together with 
+Apache 2 and memcached.
 
-There are different flavors of this Docker image, added as tags. To checkout a specific flavor, use `jenserat/docker:[tag]` as image name. By default, `latest` wil be used.
-
-  - **latest**: normal SOGo release
-  - **nightly**: nightly builds, rebuild automatically
-  - **activesync**: like latest, but includes ActiveSync module
-  
-    Please be aware that ActiveSync uses patented technology and might require negotiating with Microsoft. From the [SOGo documentation](http://www.sogo.nu/files/docs/SOGo%20Installation%20Guide.pdf):
-
-    > In order to use the SOGo ActiveSync support code in production
-    > environments, you need to get a proper usage license from Microsoft.
-    > Please contact them directly to negotiate the fees associated to your
-    > user base.
-
-  - **activesync-nightly**: like nightly, but includes ActiveSync module
+The image is based on the great work of [jenserat](https://github.com/JensErat/docker-sogo) but 
+using the version3 nightly release channel instead. If you need ActiveSync support please use 
+the version by [bigmudcake](https://github.com/bigmudcake/docker-sogo).
 
 ## Setup
 
